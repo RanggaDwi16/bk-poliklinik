@@ -39,7 +39,7 @@ if (isset($_POST["submit"])) {
         die;
     } else {
         // cek apakah data berhasil di ubah atau tidak
-        updateJadwalBedaHari($_POST, $id);
+        updateJadwalPeriksa($_POST, $id);
         echo "
           <script>
               alert('Data berhasil diubah');

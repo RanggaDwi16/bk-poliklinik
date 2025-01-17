@@ -100,7 +100,7 @@ function tambahJadwalPeriksa($data)
     }
 }
 
-// Jadwal Periksa Sisi Dokter
+// Jadwal Periksa Sisi Dokter Tidak Boleh Hari yang Sama
 function tambahJadwalPeriksa__($data)
 {
     try {
@@ -133,6 +133,7 @@ function tambahJadwalPeriksa__($data)
     }
 }
 
+// Jadwal Periksa Sisi Dokter Boleh Hari yang Sama
 function updateJadwalBedaHari($data, $id)
 {
     global $conn;
@@ -184,6 +185,7 @@ function updateJadwalBedaHari($data, $id)
 }
 
 
+// Hanya 1 Jadwal Aktif per Dokter
 function updateJadwalPeriksa($data, $id)
 {
     try {
